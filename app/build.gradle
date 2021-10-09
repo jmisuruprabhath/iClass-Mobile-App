@@ -1,0 +1,146 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    testOptions {
+        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+
+        unitTests.all {
+            useJUnitPlatform() // <--- this is the important part
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.example.teacherapp"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    testOptions {
+        unitTests.includeAndroidResources = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    buildToolsVersion '30.0.3'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+
+    //testImplementation 'junit:junit:4.13.2'
+
+    implementation 'com.google.firebase:firebase-firestore:21.4.0'
+
+
+    //testImplementation 'junit:junit:4.12'
+    // Optional -- Robolectric environment
+    testImplementation 'androidx.test:core:1.4.0'
+    // Optional -- Mockito framework
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+ 
+    //testImplementation 'junit:junit:4.13.2'
+
+    //testImplementation 'junit:junit:4.+'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
+
+    testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.1"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.7.1"
+    testImplementation "org.junit.jupiter:junit-jupiter-params:5.7.1"
+    testRuntimeOnly "org.junit.vintage:junit-vintage-engine:5.7.1"
+
+
+
+    //androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    //androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'com.google.firebase:firebase-core:19.0.1'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.0'
+    implementation 'com.google.firebase:firebase-database-ktx:20.0.2'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'com.firebaseui:firebase-ui-database:4.3.2'
+
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
+
+//counting and expression
+    implementation('net.objecthunter:exp4j:0.4.4')
+
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0-alpha01'
+    implementation 'com.google.android.material:material:1.5.0-alpha03'
+
+
+    //implementation 'com.android.support:design:28.0.0'
+
+
+    //Room db
+    implementation "androidx.room:room-runtime:2.3.0"
+    annotationProcessor "androidx.room:room-compiler:2.3.0"
+
+    // Android Architecture Components
+    def lifecycle_version = "2.3.1"
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+
+    //biometric authentication
+    implementation 'androidx.biometric:biometric:1.0.1'
+
+
+    //Card View Dependency
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+
+
+    //LineGraph library
+    implementation 'com.jjoe64:graphview:4.2.2'
+
+
+    // Required -- JUnit 4 framework
+    testImplementation 'junit:junit:4.13.2'
+    // Optional -- Robolectric environment
+    testImplementation 'androidx.test:core:1.4.0'
+    // Optional -- Mockito framework
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+
+}
+
+apply plugin: 'com.google.gms.google-services'

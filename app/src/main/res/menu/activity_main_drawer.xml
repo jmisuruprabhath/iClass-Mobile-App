@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Profile">
+
+            <menu>
+                <item android:id="@+id/nav_editprofile"
+                    android:title="My Profile"
+                    android:icon="@drawable/nav_profile"
+                    />
+
+                <item android:id="@+id/nav_logout"
+                    android:title="Log Out"
+                    android:icon="@drawable/logout_icon"
+                    />
+            </menu>
+
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home_icon"
+            />
+
+        <item android:id="@+id/nav_attendance"
+            android:title="Attendance"
+            android:icon="@drawable/nav_attendance"
+            />
+
+        <item android:id="@+id/nav_scheduler"
+            android:title="Scheduler"
+            android:icon="@drawable/nav_scheduler"
+            />
+
+        <item android:id="@+id/nav_todolist"
+            android:title="To Do List"
+            android:icon="@drawable/nav_toodolist"
+            />
+
+        <item android:id="@+id/nav_notes"
+            android:title="Notes"
+            android:icon="@drawable/nav_notes"
+            />
+
+        <item android:id="@+id/nav_gpacal"
+            android:title="GPA Calculator"
+            android:icon="@drawable/nav_gpa"
+            />
+
+    </group>
+</menu>

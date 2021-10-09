@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "979439953139",
+    "project_id": "class-management-a6cd7",
+    "storage_bucket": "class-management-a6cd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979439953139:android:92a54154826152302c4386",
+        "android_client_info": {
+          "package_name": "com.example.teacherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979439953139-bcl34q8e8u9pn5kbtkodb71g3dl53qi8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQhhDZX34f-hRZTEAafkT5FqFn7kbsO-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "979439953139-bcl34q8e8u9pn5kbtkodb71g3dl53qi8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

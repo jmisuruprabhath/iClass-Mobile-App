@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.teacherapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/HiddenTitleTheme">
+        <activity
+            android:name=".AverageCal"
+            android:exported="true" />
+        <activity
+            android:name=".CalculatorsScreen"
+            android:exported="true" />
+        <activity
+            android:name=".ShedulerScreen"
+            android:exported="true" />
+        <activity
+            android:name=".ShedulerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.InsertNoteActivity"
+            android:exported="true"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".Activity.UpdateNotesActivity"
+            android:exported="true"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".NotesActivity"
+            android:exported="true"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".GPAcal"
+            android:exported="true"/>
+        <activity
+            android:name=".ScanQRActivity"
+            android:exported="true" />
+        <activity
+            android:name=".GenerateQRCode"
+            android:exported="true" />
+        <activity
+            android:name=".QRActivity"
+            android:exported="true" />
+        <activity
+            android:name=".classView"
+            android:exported="true"
+            android:label="Classes"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".Attendance"
+            android:exported="true"
+            android:label="ClassName"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".LineGraph"
+            android:exported="true"
+            android:label="ClassName"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ToDoListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VoiceCal"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.TeacherApp.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReciever"
+            android:enabled="true"
+            android:exported="true"></receiver>
+    </application>
+
+</manifest>

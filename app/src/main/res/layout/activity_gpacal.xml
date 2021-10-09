@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GPAcal"
+    >
+
+
+
+    <ScrollView
+
+        android:background="@drawable/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/gpaback"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+
+            <TextView
+                android:text="GPA Calculator"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gpastudy2"
+                android:padding="10dp"
+                android:layout_margin="5dp"/>
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/edittext1"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:hint="Enter Course Credit"
+                android:textColorHint="#a6a6a6"
+                android:gravity="center"
+                android:paddingTop="20dp"></EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginVertical="10dp"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Grade:"
+                android:textSize="20sp"
+                android:textColor="#a6a6a6"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:paddingVertical="10dp"
+                />
+            <Spinner
+                android:id="@+id/spinnergrade"
+                android:layout_width="100dp"
+                android:layout_gravity="right"
+                android:paddingVertical="20dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginHorizontal="10dp"
+                android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+              <Button
+                  android:id="@+id/btn1"
+                  android:backgroundTint="#1f7a7a"
+                  android:layout_gravity="center"
+                  android:text="Add Course"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+              <Button
+                  android:id="@+id/btn2"
+                  android:backgroundTint="#1f7a7a"
+                  android:text="Check Your GPA"
+                  android:layout_gravity="center"
+                  android:layout_marginVertical="10dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+              <TextView
+                  android:id="@+id/textviewgpa"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Here is your GPA"
+                  android:layout_marginVertical="10dp"
+                  android:textColor="@color/white"
+                  android:textSize="26sp"
+                  android:gravity="center"/>
+
+              <Button
+                  android:id="@+id/btn3"
+                  android:backgroundTint="#1f7a7a"
+                  android:layout_gravity="center"
+                  android:text="Erase"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+
+          </LinearLayout>
+
+
+      </ScrollView>
+
+
+  </LinearLayout>
